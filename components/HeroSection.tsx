@@ -15,7 +15,7 @@ export default function HeroSection({ onDemoClick }: HeroSectionProps) {
   return (
     <section
       id="hero"
-      className="relative min-h-screen flex items-center overflow-hidden hero-bg pt-16"
+      className="relative min-h-screen flex items-center overflow-hidden hero-bg"
     >
       {/* Decorative blobs */}
       <div

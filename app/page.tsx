@@ -35,12 +35,12 @@ export default function HomePage() {
   const scrollToTop = () => window.scrollTo({ top: 0, behavior: "smooth" });
 
   return (
-    <div className="animate-fade-in">
-      {/* Navigation */}
+    <>
+      {/* Navbar — direct child, no wrapper between body and fixed nav */}
       <Navbar onDemoClick={openModal} />
 
       {/* Page Sections */}
-      <main>
+      <main className="pt-16">
         <HeroSection onDemoClick={openModal} />
         <StatsSection />
         <FeaturesSection />
@@ -93,6 +93,6 @@ export default function HomePage() {
           <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 15.75l7.5-7.5 7.5 7.5" />
         </svg>
       </button>
-    </div>
+    </>
   );
 }
